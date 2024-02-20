@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+    <head>
+    <link href="css/styles.css" type="text/css" rel="stylesheet">
+    <meta charset="UTF-8" />
+    <title>Epsilon 3 - Features </title>
+    </head>
+    <header>
+        <!-- Search Bar -->
+        <div class="search-container">
+            <input type="text" placeholder="What are you looking for?">
+            <button type="submit">Search</button>
+        </div>
+
+        <div a href="index.html">
+            <h1 align="center">Epsilon 3</h1> 
+        </div>
+        <h3 align="center">A new era of seal leashes.</h3>
+
+        <!-- Navigation Bar-->
+        <div class="navbar">
+            <a href="options.html">Options</a>
+            <a href="features.html">Features</a>
+            <div class="dropdown">
+            <button class="dropbtn" onclick="toggleDropdown()">Home
+            <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content" id="myDropdown">
+                <a href="index.html">About</a>
+                <a href="index.html"> Why Epsilon 3</a>
+                <a href="index.html">Contact</a>
+            </div>
+            </div>
+            <a href="prices.html">Prices</a>
+        </div>
+
+
+
+        </header>
+
+        <body onload="changeSlide()">
+        <br/><br/><br/>
+        <h2 align="center">Features</h2>
+
+
+        <h3>Built For Comfort</h3><p>Cozy for your seal to wear for hours. Comfy to hold. </p>
+        <h3>Durable Design</h3><p>Holds up against even the chonkest of monkuses.</p>
+        <h3>Easy Adjust</h3><p>No more struggling to tighten your seal's collar.</p>
+        <br/><br/>
+
+
+
+        <script>
+            function toggleDropdown() {
+                document.getElementById("myDropdown").classList.toggle("show");
+            }
+            
+            //Close the dropdown if the user clicks outside of it
+            window.onclick = function(e) {
+                if (!e.target.matches('.dropbtn')) {
+                    var myDropdown = document.getElementById("myDropdown");
+                    if (myDropdown.classList.contains('show')) {
+                        myDropdown.classList.remove('show');
+                    }
+                }
+            }
+        </script>
+    </body>
+</html>
